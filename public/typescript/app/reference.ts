@@ -3,6 +3,7 @@
 /// <reference path="../def/jquery/jquery.d.ts" />
 /// <reference path="../def/angular/angular.d.ts" />
 /// <reference path="../def/angular/angular-route.d.ts" />
+/// <reference path="../def/my-scope.d.ts" />
 
 /** Utility modules */
 /// <reference path="util/assert.ts" />
