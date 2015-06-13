@@ -14,18 +14,20 @@ module modules {
      * at the moment that it is being referenced.
      */
     export var main:ng.IModule = angular.module('main', [
-        services.common.name,
+        modules.services.common.name,
         'ngRoute',
     ])
         .config(($routeProvider:ng.route.IRouteProvider) => {
             $routeProvider
                 .when("/home", {template: home.html})
                 .when("/tasks", {controller: controllers.TaskListController, template: tasklist.html})
-                .when("/test", {controller: controllers.TestController, template: '{{message}}'})
+                .when("/test", {controller: 'TestController', template: '<h2>{{message}}</h2>'})
+                .when("/exam", {controller: com.example.controllers.ExampleController, template: '<h2>{{user|json}}</h2>'})
             // .otherwise({redirectTo: "/home"})
         })
         .constant("version", "0.1.0")
-        .controller(controllers)
+        //.controller(controllers)
+        .controller('TestController', ['$scope', controllers.TestController])
         .directive(directives)
 
 }

@@ -18,6 +18,7 @@
 //grunt-start
 /// <reference path="partials/home.html.ts" />
 /// <reference path="partials/tasklist.html.ts" />
+/// <reference path="controllers/demoController.ts" />
 /// <reference path="controllers/task-controllers.ts" />
 /// <reference path="directives/common-directives.ts" />
 /// <reference path="services/uuid-generator.ts" />

@@ -32,7 +32,7 @@ module controllers {
 
     export class TestController {
         constructor($scope:myscope.IMyScope) {
-            $scope.message = '~~welcome~~';
+            $scope.message = 'TestController';
         }
 
     }
