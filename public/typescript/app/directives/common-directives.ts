@@ -34,6 +34,19 @@ module directives {
         }
     }
 
+    export var foo = ()=> {
+        return {
+            transclude: true,
+            template: '<span style="color:#ff9f40;">foo</span> <ng-transclude/>'
+        }
+    }
+
+    export var bar = ()=> {
+        return {
+            template: '<div><span style="color:blue;">bar</span></div>'
+        }
+    }
+
     export interface MyCurrentTimeScope extends ng.IScope {
         format?: string
         currentTime?: Date
